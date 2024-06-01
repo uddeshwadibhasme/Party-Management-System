@@ -1,0 +1,80 @@
+<app-header></app-header><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-1">
+            <a href="/post/index" routerLink="/post/index" class="btn" style="background-color: #083e89;color:white"><i class="bi bi-box-arrow-left"></i></a>
+        </div>
+        <div class="col-md-6">
+            <h3 style="color: gray;">Update Vender Details</h3>
+        </div>
+    </div>
+    <div class="justify-content-center  offset-3">
+        <form [formGroup]="form" (ngSubmit)="submit()">
+            <div class="form-group col-sm-8">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" formControlName="name" [(ngModel)]="data.name">
+            </div>
+            <div class="form-group col-sm-8">
+                <label for="companyName">Company Name:</label>
+                <input type="text" class="form-control" id="companyName" formControlName="companyName"
+                    [(ngModel)]="data.company_name">
+            </div>
+            <div class="form-group col-sm-8">
+                <label for="mobileNo">Mobile No:</label>
+                <input type="text" class="form-control" id="mobileNo" formControlName="mobileNo"
+                    [(ngModel)]="data.mobile_no">
+            </div>
+            <div class="form-group col-sm-8">
+                <label for="telephoneNo">Telephone No:</label>
+                <input type="text" class="form-control" id="telephoneNo" formControlName="telephoneNo"
+                    [(ngModel)]="data.telephone_no">
+            </div>
+            <div class="form-group col-sm-8">
+                <label for="whatsappNo">WhatsApp No:</label>
+                <input type="text" class="form-control" id="whatsappNo" formControlName="whatsappNo"
+                    [(ngModel)]="data.whatsapp_no">
+            </div>
+            <div class="form-group col-sm-8">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" formControlName="email" [(ngModel)]="data.email">
+            </div>
+            <div class="form-group col-sm-8">
+                <label for="remark">Remark:</label>
+                <input type="text" class="form-control" id="remark" formControlName="remark" [(ngModel)]="data.remark">
+            </div>
+            <div class="form-group col-sm-8">
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input type="date" class="form-control" id="dateOfBirth" formControlName="dateOfBirth"
+                    [(ngModel)]="data.date_of_birth">
+            </div>
+            <div class="form-group col-sm-8">
+                <label for="anniversaryDate">Anniversary Date:</label>
+                <input type="date" class="form-control" id="anniversaryDate" formControlName="anniversaryDate"
+                    [(ngModel)]="data.anniversary_date">
+            </div>
+            <div class="form-group col-sm-8">
+                <label for="gstin">GSTIN:</label>
+                <input type="text" class="form-control" id="gstin" formControlName="gstin" [(ngModel)]="data.gstin">
+            </div>
+            <div class="form-group col-sm-8">
+                <label for="panNo">PAN No:</label>
+                <input type="text" class="form-control" id="panNo" formControlName="panNo" [(ngModel)]="data.pan_no">
+            </div>
+            <div class="form-group col-sm-8">
+                <label for="applyTds">Apply TDS:</label>
+                <input type="checkbox" id="applyTds" formControlName="applyTds" [(ngModel)]="data.apply_tds">
+            </div>
+            <div class="form-group col-sm-8">
+                <label for="creditLimit">Credit Limit:</label>
+                <input type="number" class="form-control" id="creditLimit" formControlName="creditLimit"
+                    [(ngModel)]="data.credit_limit">
+            </div>
+            <div class="form-group col-sm-8">
+                <label for="isActive">Is Active:</label>
+                <input type="checkbox" id="isActive" formControlName="isActive" [(ngModel)]="data.is_active">
+            </div>
+            <button class="btn offset-3" type="submit" style="background-color: #083e89;color:white">Update<i
+                class="bi bi-box-arrow-in-right"></i></button>
+        </form>
+    </div>
+</div>
